@@ -11,4 +11,5 @@ func Routes(app *fiber.App) {
 
 	// Flags
 	app.Get("/flags", rest.GetAllFlags)
+	app.Post("/flags", rest.CreateFlag)
 }

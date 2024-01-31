@@ -14,6 +14,6 @@ func GetFlags() ([]models.Flag, error) {
 
 func InsertFlag(f models.Flag) (models.Flag, error) {
 	db := database.GetDatabase()
-	res := db.Create(f)
+	res := db.Create(&f)
 	return f, res.Error
 }

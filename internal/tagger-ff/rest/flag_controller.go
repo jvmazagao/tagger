@@ -19,5 +19,7 @@ func CreateFlag(c *fiber.Ctx) error {
 		return err
 	}
 
-	return c.Status(200).JSON(data)
+	flag, _ := service.CreateFlag(&data)
+
+	return c.Status(200).JSON(flag)
 }
