@@ -15,7 +15,7 @@ type Flag struct {
 	ID          int
 	Name        string
 	Enabled     bool
-	Description *string
+	Description string
 }
 
 type FlagService interface {

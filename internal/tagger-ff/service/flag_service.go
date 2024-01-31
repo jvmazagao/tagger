@@ -11,7 +11,7 @@ func GetAllFlags() ([]models.Flag, error) {
 
 func CreateFlag(f *models.FlagData) (models.Flag, error) {
 	flag := models.Flag{
-		Description: &f.Description,
+		Description: f.Description,
 		Name:        f.Name,
 		Enabled:     f.Enabled,
 	}
